@@ -6944,7 +6944,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 79136964597786323, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
       propertyPath: sfxSound.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 79136964597786323, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
       propertyPath: sfxSound.Array.data[4].clip
@@ -6955,7 +6955,19 @@ PrefabInstance:
       value: spirit
       objectReference: {fileID: 0}
     - target: {fileID: 79136964597786323, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
+      propertyPath: sfxSound.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1399c470a700e0b4eb34e43fedfd9b78, type: 3}
+    - target: {fileID: 79136964597786323, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
+      propertyPath: sfxSound.Array.data[5].name
+      value: rat
+      objectReference: {fileID: 0}
+    - target: {fileID: 79136964597786323, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
       propertyPath: sfxSound.Array.data[4].volume
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 79136964597786323, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
+      propertyPath: sfxSound.Array.data[5].volume
       value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 5280026213980693341, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
