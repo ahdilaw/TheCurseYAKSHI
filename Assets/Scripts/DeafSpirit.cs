@@ -205,6 +205,10 @@ public class DeafSpirit : MonoBehaviour
             _PursueMode = _ATTACKMODE;
             inflictPlayerAttack = true;
         }
+        if (AudioManager.instance != null && AudioManager.instance.IsPlayingBackgroundSFX("spirit") == false)
+        {
+            AudioManager.instance.PlayBackgroundSFX("spirit");
+        }
     }
 
     private void OnCollisionExit2D(Collision2D other)

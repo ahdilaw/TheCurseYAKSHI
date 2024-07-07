@@ -6425,7 +6425,7 @@ Transform:
   m_GameObject: {fileID: 1147828930}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.62565804, y: -6.5989094, z: -10}
+  m_LocalPosition: {x: 2.6348076, y: -6.606848, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6942,6 +6942,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 79136964597786323, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
+      propertyPath: sfxSound.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 79136964597786323, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
+      propertyPath: sfxSound.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a5706b2388a9bf409374644ca3f2c60, type: 3}
+    - target: {fileID: 79136964597786323, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
+      propertyPath: sfxSound.Array.data[4].name
+      value: spirit
+      objectReference: {fileID: 0}
+    - target: {fileID: 79136964597786323, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
+      propertyPath: sfxSound.Array.data[4].volume
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 5280026213980693341, guid: 77f31af06b6a64243ab4089d8e093a29, type: 3}
       propertyPath: m_Name
       value: Audio Manager
@@ -15288,6 +15304,7 @@ SceneRoots:
   - {fileID: 1714980225}
   - {fileID: 2069938720}
   - {fileID: 1774376165}
+  - {fileID: 1230009088}
   - {fileID: 429264081}
   - {fileID: 1416314478}
   - {fileID: 821307805}
@@ -15297,7 +15314,6 @@ SceneRoots:
   - {fileID: 173951540}
   - {fileID: 880284848}
   - {fileID: 34929401}
-  - {fileID: 1230009088}
   - {fileID: 1167064042}
   - {fileID: 1784318043}
   - {fileID: 1220533423}
