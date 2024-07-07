@@ -5,7 +5,7 @@ using UnityEngine;
 public enum GameState { FreeRoam, Dialog, Cutscene }
 public class GameController : MonoBehaviour
 {
-    [SerializeField] PlayerController playerController;
+    [SerializeField] Player playerController;
 
     GameState state;
 

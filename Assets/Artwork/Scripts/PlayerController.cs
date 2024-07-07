@@ -43,6 +43,12 @@ public class PlayerController : MonoBehaviour
     {    
         PlayerInput();
     }
+
+    public void Update()
+    {
+        PlayerInput();
+    }
+
     private void FixedUpdate()
     {
         Move();
