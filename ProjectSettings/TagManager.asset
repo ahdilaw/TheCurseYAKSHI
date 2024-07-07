@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - player--intimate
+  - player--footsteps
+  - player--torchlight
+  - player--body
+  - Spirits
+  - Rats
+  - Bats
+  - Thunderstorm
+  - --player
+  - --enemy
+  - Footsteps
+  - Torchlight
+  - Deadbody
+  - Yakshi
+  - Lives
+  - Batteries
+  - Keys
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - SolidObjects
+  - Interactable
+  - Transition
+  - Player
+  - Enemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Collision
+    uniqueID: 1817467257
+    locked: 0
+  - name: Background
+    uniqueID: 1647622135
+    locked: 0
+  - name: Foreground
+    uniqueID: 3817879419
+    locked: 0
+  - name: Player
+    uniqueID: 2560000109
+    locked: 0
+  - name: Vision
+    uniqueID: 3831351873
+    locked: 0
