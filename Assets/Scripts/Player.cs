@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask solidObjectsLayer;
     [SerializeField] private LayerMask interactableLayer;
     [SerializeField] private HUD HUD;
+    [SerializeField] private ScreenFade screenFade;
 
     private void Awake()
     {
@@ -62,9 +63,10 @@ public class Player : MonoBehaviour
     private void Start()
     {
         movementSpeed = moveSpeed;
+        if (screenFade != null) screenFade.FadeIn();
     }
 
-    void Update()
+    public void HandleUpdate()
     {
 
         if (isInBatAttack)
