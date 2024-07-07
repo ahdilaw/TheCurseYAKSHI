@@ -170,15 +170,21 @@ public class Player : MonoBehaviour
         var moveTo = rb.position + movement * (movementSpeed * Time.fixedDeltaTime);
         if (IsWalkable(moveTo))
         {
+
             rb.MovePosition(moveTo);
             if (movement != Vector2.zero)
             {
                 animator.SetFloat("moveX", movement.x);
                 animator.SetFloat("moveY", movement.y);
                 isMoving = true;
+                if (AudioManager.instance != null && AudioManager.instance.IsPlayingSFX("player_walk") == false)
+                {
+                    AudioManager.instance.PlaySFX("player_walk");
+                }
             }
             else
             {
+                AudioManager.instance.StopSFX();
                 isMoving = false;
             }
             animator.SetBool("isMoving", isMoving);
