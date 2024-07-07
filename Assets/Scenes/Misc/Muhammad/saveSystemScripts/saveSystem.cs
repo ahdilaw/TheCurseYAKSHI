@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
+
 
 public class saveSystem : MonoBehaviour
 {
@@ -14,11 +16,13 @@ public class saveSystem : MonoBehaviour
         string json;
         gameData newData;
 
-        newData = new gameData(currentPlayerPos);
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        newData = new gameData(currentPlayerPos, currentSceneName);
         json = JsonUtility.ToJson(newData);
         File.WriteAllText(newSavedPos, json);
         Debug.Log("Game Saved to: " + Application.dataPath + jsonPath);
     }
+
 
     public static Vector3 loadGame()
     {
@@ -33,20 +37,14 @@ public class saveSystem : MonoBehaviour
         json = File.ReadAllText(newSavedPos);
         newData = JsonUtility.FromJson<gameData>(json);
 
-        //return new Vector3(newData.positionX newData.positionY, newData.positionZ);
         return new Vector3(newData.setPosX, newData.setPosY, newData.setPosZ);
+        //return (new Vector3(newData.setPosX, newData.setPosY, newData.setPosZ), newData.setSceneName);
 
-        //if (File.Exists(newSavedPos))
-        //{
-        //    string json = File.ReadAllText(newSavedPos);
-        //    gameData data = JsonUtility.FromJson<gameData>(json);
+    }
 
-        //    return new Vector3(data.positionX, data.positionY, data.positionZ);
-        //}
 
-        //else
-        //{
-        //    return Vector3.zero;
-        //}
+    public static bool SaveDataExists()
+    {
+        return File.Exists(newSavedPos);
     }
 }

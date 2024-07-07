@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-
 public class gameData
 {
     [SerializeField] private float positionX;
     [SerializeField] private float positionY;
     [SerializeField] private float positionZ;
-
-    //public float positionX;
-    //public float positionY;
-    //public float positionZ;
+    [SerializeField] private string sceneName; // Add this line
 
     public float setPosX
     {
@@ -32,10 +28,17 @@ public class gameData
         set => positionZ = value;
     }
 
-    public gameData(Vector3 currentPlayerPos)
+    public string setSceneName
+    {
+        get => sceneName;
+        set => sceneName = value;
+    }
+
+    public gameData(Vector3 currentPlayerPos, string currentSceneName)
     {
         positionX = currentPlayerPos.x;
         positionY = currentPlayerPos.y;
         positionZ = currentPlayerPos.z;
+        sceneName = currentSceneName;
     }
 }
