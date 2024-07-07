@@ -62,4 +62,13 @@ public class PauseScreen : MonoBehaviour
         pauseMenu.SetActive(true);
         settingsMenu.SetActive(false);
     }
+
+    public void SaveGame()
+    {
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            saveSystem.saveGame(player.transform.position);
+        }
+    }
 }

@@ -9,9 +9,6 @@ public class jsonRW : MonoBehaviour
     [SerializeField] private Button saveButton;
     [SerializeField] private Button loadButton;
     [SerializeField] private GameObject player;
-    //public Button saveButton;
-    //public Button loadButton;
-    //public GameObject player;
 
     private void Start()
     {
